@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Match</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Valentine's Match 💕</h2>
+        <p>Total Views: <span id="viewCount">0</span></p>
+
+        <input type="text" id="boyName" placeholder="Enter Boy's Name">
+        <input type="text" id="girlName" placeholder="Enter Girl's Name">
+        <br>
+        <button onclick="calculateMatch()">Check Match</button>
+        <div id="result"></div>
+
+        <div class="tab-container">
+            <button class="tab-button active" onclick="showTab('recent')">Recent Couples</button>
+            <button class="tab-button" onclick="showTab('rating')">Rate Us</button>
+        </div>
+
+        <div id="recent" class="tab-content" style="display: block;">
+            <h3>Recent Matches</h3>
+            <ul id="recentList"></ul>
+        </div>
+
+        <div id="rating" class="tab-content">
+            <h3>Rate This Website</h3>
+            <div class="rating">
+                <span class="star" onclick="rate(1)">★</span>
+                <span class="star" onclick="rate(2)">★</span>
+                <span class="star" onclick="rate(3)">★</span>
+                <span class="star" onclick="rate(4)">★</span>
+                <span class="star" onclick="rate(5)">★</span>
+            </div>
+            <p id="ratingText">Give us a rating!</p>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
