@@ -8,6 +8,9 @@
        let recentMatches = JSON.parse(localStorage.getItem("recentMatches")) || [];
 
        function calculateMatch() {
+
+           let matchRating = (random.math())*10;
+           
            let boy = document.getElementById("boyName").value.trim().toLowerCase();
            let girl = document.getElementById("girlName").value.trim().toLowerCase();
 
