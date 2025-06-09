@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Match</title>
+    <title>Valentine's Match 💘</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,14 +12,15 @@
         <p>Total Views: <span id="viewCount">0</span></p>
 
         <input type="text" id="boyName" placeholder="Enter Boy's Name">
-        <input type="text" id="girlName" placeholder="Enter Girl's Name">
-        <br>
-        <button onclick="calculateMatch()">Check Match</button>
+        <input type="text" id="girlName" placeholder="Enter Girl's Name"><br>
+
+        <button onclick="calculateMatch()">💘 Check Match</button>
         <div id="result"></div>
+        <button onclick="shareResult()">🔗 Share Result</button>
 
         <div class="tab-container">
-            <button class="tab-button active" onclick="showTab('recent')">Recent Couples</button>
-            <button class="tab-button" onclick="showTab('rating')">Rate Us</button>
+            <button class="tab-button active" onclick="showTab('recent', event)">Recent Couples</button>
+            <button class="tab-button" onclick="showTab('rating', event)">Rate Us</button>
         </div>
 
         <div id="recent" class="tab-content" style="display: block;">
@@ -41,9 +42,13 @@
     </div>
 
     <footer>
-        <p class="watermark">Created by <a href="https://www.linkedin.com/in/aniket-ahirwar-733611303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">ANIKET AHIRWAR</a></p>
+        <p class="watermark">
+            Created by 
+            <a href="https://www.linkedin.com/in/aniket-ahirwar-733611303" target="_blank">
+                ANIKET AHIRWAR
+            </a>
+        </p>
     </footer>
-    
 
     <script src="script.js"></script>
 </body>
