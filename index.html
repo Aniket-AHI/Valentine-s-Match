@@ -1,26 +1,33 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Match 💘</title>
+    <title>💖 LoveMatch - Find Your Valentine 💖</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h2>Valentine's Match 💕</h2>
-        <p>Total Views: <span id="viewCount">0</span></p>
+        <h1 class="header">💖 LoveMatch 💖</h1>
+        <p class="view-count">Total Views: <span id="viewCount">0</span></p>
 
-        <input type="text" id="boyName" placeholder="Enter Boy's Name">
-        <input type="text" id="girlName" placeholder="Enter Girl's Name"><br>
+        <div class="heart-animation">💘</div>
 
-        <button onclick="calculateMatch()">💘 Check Match</button>
+        <div class="input-group">
+            <input type="text" id="boyName" placeholder="Enter His Name...">
+            <input type="text" id="girlName" placeholder="Enter Her Name...">
+        </div>
+
+        <div class="button-group">
+            <button class="main-btn" onclick="calculateMatch()">💑 Calculate Love</button>
+            <button class="share-btn" onclick="shareResult()">📤 Share Result</button>
+        </div>
+
         <div id="result"></div>
-        <button onclick="shareResult()">🔗 Share Result</button>
 
         <div class="tab-container">
-            <button class="tab-button active" onclick="showTab('recent', event)">Recent Couples</button>
-            <button class="tab-button" onclick="showTab('rating', event)">Rate Us</button>
+            <button class="tab-button active" onclick="showTab('recent', event)">💌 Recent Lovers</button>
+            <button class="tab-button" onclick="showTab('rating', event)">🌟 Rate Us</button>
         </div>
 
         <div id="recent" class="tab-content" style="display: block;">
@@ -29,7 +36,7 @@
         </div>
 
         <div id="rating" class="tab-content">
-            <h3>Rate This Website</h3>
+            <h3>How Much You 💖 Us?</h3>
             <div class="rating">
                 <span class="star" onclick="rate(1)">★</span>
                 <span class="star" onclick="rate(2)">★</span>
@@ -37,16 +44,13 @@
                 <span class="star" onclick="rate(4)">★</span>
                 <span class="star" onclick="rate(5)">★</span>
             </div>
-            <p id="ratingText">Give us a rating!</p>
+            <p id="ratingText">Show your love!</p>
         </div>
     </div>
 
     <footer>
         <p class="watermark">
-            Created by 
-            <a href="https://www.linkedin.com/in/aniket-ahirwar-733611303" target="_blank">
-                ANIKET AHIRWAR
-            </a>
+            Made with 💓 by <a href="https://www.linkedin.com/in/aniket-ahirwar-733611303" target="_blank">aniket</a>
         </p>
     </footer>
 
